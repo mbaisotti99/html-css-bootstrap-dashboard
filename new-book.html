@@ -54,17 +54,17 @@
 
         <div class="row">
             <div class="col-6">
-                <label for="name" class="py-1 fs-3">Nome Autore</label> <br>
-                <input id="name" type="text" class="w-100" placeholder="Carlo">
+                <label for="name" class="py-1 fs-3 form-label">Nome Autore</label> <br>
+                <input id="name" type="text" class="form-control w-100" placeholder="Carlo">
             </div>
             <div class="col-6">
-                <label for="surname" class="py-1 fs-3">Cognome Autore</label> <br>
-                <input id="surname" type="text" class="w-100" placeholder="Verdi">
+                <label for="surname" class="py-1 fs-3 form-label">Cognome Autore</label> <br>
+                <input id="surname" type="text" class="form-control w-100" placeholder="Verdi">
             </div>
 
             <div class="col-12 py-5">
-                <label for="title" class="py-1 fs-3">Titolo</label> <br>
-                <input id="title" type="text" class="w-100" placeholder="Il Pendolo Errante">
+                <label for="title" class="py-1 fs-3 form-label">Titolo</label> <br>
+                <input id="title" type="text" class="form-control w-100" placeholder="Il Pendolo Errante">
                 <div id="passwordHelpBlock" class="form-text py-1">
                     Titolo Versione Italiana
                   </div>
@@ -73,7 +73,7 @@
         
         <div class="row">
             <div class="col-12 col-md-4 py-2">
-                <label for="genere" class="py-1 fs-3">Scegli il Genere</label> <br>
+                <label for="genere" class="py-1 fs-3 form-label">Scegli il Genere</label> <br>
                 <select name="genere" id="genere" class="form-select w-100">
                     <option selected>Genere</option>
                     <option value="giallo">Giallo</option>
@@ -83,23 +83,27 @@
                 </select>
             </div>
             <div class="col-12 col-md-4"py-2>
-                <label for="year" class="py-1 fs-3">Anno di Pubblicazione</label> <br>
-                <input id="year" type="text" class="w-100" placeholder="1999">
+                <label for="year" class="py-1 fs-3 form-label">Anno di Pubblicazione</label> <br>
+                <input id="year" type="text" class="form-control w-100" placeholder="1999">
             </div>
             <div class="col-12 col-md-4"py-2>
-                <label for="isbn" class="py-1 fs-3">ISBN#</label> <br>
-                <input id="isbn" type="text" class="w-100" placeholder="ISBN#">
+                <label for="isbn" class="py-1 fs-3 form-label">ISBN#</label> <br>
+                <input id="isbn" type="text" class="w-100 form-control" placeholder="ISBN#">
             </div>  
             
         </div>
                 
         <hr class="my-5">
         
-        <label for="note" class="py-1 fs-3">Note</label> <br>
-        <textarea name="note" id="note" class="w-100" rows="5"></textarea>
+        <label for="note" class="py-1 fs-3 form-label">Note</label> <br>
+        <textarea name="note" id="note" class="w-100 form-control" rows="5"></textarea>
         <br>
-        <input type="checkbox" id="digital">
-        <label for="digital" class="py-2">Disponibile in Digitale</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Disponibile in Digitale
+            </label>
+          </div>
         <br>
         <div class="btn btn-primary my-5">Aggiungi Libro</div>
     </div>
