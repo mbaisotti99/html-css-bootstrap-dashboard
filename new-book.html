@@ -18,7 +18,7 @@
 <body>
 
     <!-- Header  -->
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand object-fit-contain mh-50" href="#">
@@ -91,10 +91,17 @@
                 <input id="isbn" type="text" class="w-100" placeholder="ISBN#">
             </div>  
             
-            <hr class="my-5">
-
-
         </div>
+                
+        <hr class="my-5">
+        
+        <label for="note" class="py-1 fs-3">Note</label> <br>
+        <textarea name="note" id="note" class="w-100" rows="5"></textarea>
+        <br>
+        <input type="checkbox" id="digital">
+        <label for="digital" class="py-2">Disponibile in Digitale</label>
+        <br>
+        <div class="btn btn-primary my-5">Aggiungi Libro</div>
     </div>
 
 
